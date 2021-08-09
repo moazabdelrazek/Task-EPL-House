@@ -1,0 +1,28 @@
+.wrap_editor {
+    float: left;
+    padding: 6px 8px;
+    border-radius: 100px;                        
+    width: calc(100% - 39px);
+    background-color: #3a3b3c;
+    &.reply {
+        width: calc(100% - 31px);
+    }
+    input {
+        float: left;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: #e4e6eb;
+        padding-right: 10px;
+        width: calc(100% - 92px);
+        background-color: transparent;
+    }
+    .tools {
+        float: right;
+        span {
+            &:not(:last-of-type) {
+                margin-right: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+main {
+    padding: 50px 0;
+    .custom_container {
+        padding: 0 15px;
+        .example-card {
+            margin: 0 auto;
+            color: #e4e6eb;        
+            background: #242526;
+            max-width: calc(660px - 68px);
+            border: 1px solid #79797914;
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+            .mat-card-header {
+                .mat-card-header-text {
+                    margin: 0 8px;
+                    .mat-card-title {
+                        font-size: 16px;
+                        margin-bottom: 7px;
+                    }
+                    .mat-card-subtitle {
+                        font-size: 12px;
+                        color: #b0b3b8;
+                        .wrap {
+                            margin-left: 5px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .mat-card-subtitle, .mat-card-content {
+                margin-bottom: 8px;
+            }
+            .example-header-image {
+                overflow: hidden;
+                background-color: #000;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+            .mat-card-image {
+                min-height: 350px;
+            }
+            .wrap_video {
+                height: 400px;
+                overflow: hidden;
+                background-color: #000;
+                width: calc(100% + 32px);
+                margin: 0 -16px 16px -16px;
+                video {
+                    height: 100%;
+                    width: 100%;                    
+                }
+            }
+            .mat-card-actions {
+                padding-top: 0;
+                .status {
+                    padding: 6px 0;
+                    .info_post {
+                       overflow: hidden;
+                       span {
+                           color: #b0b3b8;
+                           font-size: 15px;
+                           &:not(:last-of-type) {
+                               float: left;
+                           }
+                           &:last-of-type {
+                               float: right;
+                           }
+                           &.name_user_reacts {
+                               margin-left: 6px;
+                           }
+                           &.total {
+                               display: none;
+                               margin-left: 6px;
+                           }
+                       }
+                    }
+                }
+                ul {
+                    padding: 6px 0;
+                    overflow: hidden;
+                    border-top: 1px solid #3e4042;
+                    border-bottom: 1px solid #3e4042;
+                    li {
+                        float: left;
+                        cursor: pointer;
+                        font-size: 15px;
+                        padding: 6px 0;
+                        font-weight: 500;                        
+                        text-align: center;
+                        border-radius: 5px;
+                        width: calc(100% / 3);
+                        transition: background-color .1s linear;
+                        &:hover {
+                            background-color: #303233;
+                        }
+                        span {
+                            display: inline-block;
+                            &:first-of-type {
+                                margin-right: 7px;
+                                vertical-align: text-bottom;
+                            }
+                        }
+                    }
+                }
+            }
+            .list_comment {
+                margin: 10px 0;
+                ul li {
+                    &:not(:last-of-type) {
+                        margin-bottom: 4px;
+                    }
+                    .list_comment_reply {
+                        ul {
+                            padding-top: 5px;
+                            margin-left: 38px;
+                            li:last-of-type {
+                                margin-bottom: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .mat-card-actions {
+        .name_user_reacts {
+            display: none;
+        }
+        .total {
+            display: block !important;
+        }
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .options {
+        li span:last-of-type {
+            display: none !important;
+        }
+    }    
+}

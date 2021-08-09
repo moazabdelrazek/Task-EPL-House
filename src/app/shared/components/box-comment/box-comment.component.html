@@ -1,0 +1,14 @@
+<div class="wrap_commeent" [ngClass]="{'reply': type == 'reply'}">
+    <div class="info">
+        <!-- {{data | json}} -->
+        <span class="user_name">{{data?.userName}}</span>
+        <span *ngIf="type == 'reply' && data?.userNameReply" class="user_name_reply_to">{{data?.userNameReply}}</span>
+        <span [attr.dir]='"auto"' class="text">{{data?.text}}</span>
+    </div>
+    <div class="option_comment">
+        <span class="opt like">like</span>
+        <span class="opt replay">Reply</span>
+        <!-- create by customDatePost -->
+        <span class="date">{{data?.createDate | customDatePost}}</span>
+    </div>
+</div>

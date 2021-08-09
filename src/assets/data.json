@@ -1,0 +1,189 @@
+[
+    {
+        "userName": "Moaz Abdel Razek",
+        "userImage": "../assets/img/user.jpeg",
+        "createDate": "Mon Aug 09 2021 10:55:43 GMT+0200 (Eastern European Standard Time)",
+        "descraptions": "Develop code faster and better. Use Anima to eliminate the grunt work and focus on the interesting stuff. ",
+        "postImage": "../assets/img/post_2.jpg",
+        "typeUser": "all",
+        "comments": [
+            {
+                "userName": "Moaz Abdel Razek",
+                "userImage": "../assets/img/user.jpeg",
+                "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "Welcome to Egypt, every body is so happy here :)",
+                "list_reply": [
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/user.jpeg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    },
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Mon Aug 09 2021 10:55:43 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    }                    
+                ]
+            },
+            {
+                "userName": "Sara Ahmed",
+                "userImage": "../assets/img/cute.jpg",
+                "createDate": "Sun Aug 05 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "Welcome to Egypt, every body is so happy here :) 2",
+                "list_reply": [
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/user.jpeg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    },
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    }                    
+                ]
+            }            
+        ],
+        "likes": {
+            "listUserReacts": [
+                {"name": "Omar Abdel Razek"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"}
+            ],
+            "typeReacts": [
+                {"type": "love.svg" },
+                {"type": "hhh.svg" }
+            ]
+        }
+    },
+    {
+        "userName": "Dj Abo Ali",
+        "userImage": "../assets/img/abo_ali.jpg",
+        "createDate": "Sun Aug 09 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+        "descraptions": "Develop code faster and better. Use Anima to eliminate the grunt work and focus on the interesting stuff. ",
+        "postVideo":"../assets/img/Watch - Facebook_2.mp4",
+        "typeUser": "friend",
+        "comments": [
+            {
+                "userName": "Moaz Abdel Razek",
+                "userImage": "../assets/img/user.jpeg",
+                "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "Welcome to Egypt, every body is so happy here :)",
+                "list_reply": [
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/user.jpeg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    },
+                    {
+                        "userName": "Moaz Abdel Razek",
+                        "userNameReply": "Mamdouh Waled Ragaie",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    }                    
+                ]
+            }
+        ],
+        "likes": {
+            "listUserReacts": [
+                {"name": "Omar Abdel Razek"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"}
+            ],
+            "typeReacts": [
+                {"type": "like.svg" },
+                {"type": "hhh.svg" }
+            ]
+        }
+    },
+    {
+        "userName": "Sara Ahmed",
+        "userImage": "../assets/img/cute.jpg",
+        "createDate": "Sun Aug 02 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+        "descraptions": "Develop code faster and better. Use Anima to eliminate the grunt work and focus on the interesting stuff. ",
+        "typeUser": "group",
+        "comments": [
+            {
+                "userName": "Moaz Abdel Razek",
+                "userImage": "../assets/img/user.jpeg",
+                "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "Welcome to Egypt, every body is so happy here :)",
+                "list_reply": [
+                    {
+                        "userName": "Mamdouh Waled Ragaie",
+                        "userNameReply": "Moaz Abdel Razek",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    },
+                    {
+                        "userName": "Mamdouh Waled Ragaie",
+                        "userNameReply": "Moaz Abdel Razek",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "الجيمع سعيد جدا"                        
+                    }                   
+                ]
+            },
+            {
+                "userName": "Sara Ahmed",
+                "userImage": "../assets/img/cute.jpg",
+                "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "i will travel to London next Week ",
+                "list_reply": [                 
+                ]
+            },
+            {
+                "userName": "Moaz Abdel Razek",
+                "userImage": "../assets/img/user.jpeg",
+                "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                "text": "Welcome to Egypt, every body is so happy here :)",
+                "list_reply": [
+                    {
+                        "userName": "Mamdouh Waled Ragaie",
+                        "userNameReply": "Moaz Abdel Razek",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "Welcome to Egypt, every body is so happy here :)"                        
+                    },
+                    {
+                        "userName": "Mamdouh Waled Ragaie",
+                        "userNameReply": "Moaz Abdel Razek",
+                        "userImage": "../assets/img/abo_ali.jpg",
+                        "createDate": "Sun Aug 08 2021 18:00:02 GMT+0200 (Eastern European Standard Time)",
+                        "text": "الجيمع سعيد جدا"                        
+                    }                   
+                ]
+            }            
+        ],
+        "likes": {
+            "listUserReacts": [
+                {"name": "Habe Ba"},
+                {"name": "Ahmed"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"},
+                {"name": "Habe Ba"}
+            ],
+            "typeReacts": [
+                {"type": "like.svg" }
+            ]
+        }
+    }     
+]

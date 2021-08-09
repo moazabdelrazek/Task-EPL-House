@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #18191a;}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+// classes helper
+.clear_fix {
+    clear: both;
+}
+
+.def_img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.list_none {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+// background icons
+.icons {
+    background-image: url("./assets/img/icons.png");
+    background-size: auto;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 1px 0px #53535452) invert(45%);
+    &.size_12 {
+        width: 12px;
+        height: 12px;
+    }
+    &.size_18 {
+        width: 18px;
+        height: 18px;
+    }
+    &.size_16 {
+        width: 16px;
+        height: 16px;
+    }
+    &.all {
+        background-position: 0px -717px;
+    }
+    &.friend {
+        background-position: 0 -704px
+    }
+    &.group {
+        background-position: 0px -548px        
+    }
+    &.un_like {
+        background-position: 0px -191px;
+    }
+    &.comment {
+        background-position: 0px -153px;
+    }
+    &.share {
+        background-position: 0px -210px;
+    }
+    &.imgo {
+        background-position: 0px -382px;
+    }
+    &.upload {
+        background-position: 0px -314px;
+    }
+    &.gif {
+        background-position: 0px -399px;
+    }
+    &.stik {
+        background-position: 0px -450px;
+    }
+}

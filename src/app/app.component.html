@@ -1,0 +1,94 @@
+<main>
+    <div class="custom_container">
+        <ng-container *ngFor="let post of listOfPosts">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image">
+                    <img [src]="post.userImage" alt="img user">
+                  </div>
+                  <mat-card-title>{{post.userName}}</mat-card-title>
+                  <mat-card-subtitle>
+                    <!-- create by customDatePost -->
+                    <span >{{post.createDate | customDatePost}}</span>
+                    <span class="wrap">
+                      <i class="icons size_12 all" [ngClass]="{'all': post.typeUser == 'all', 'friend': post.typeUser == 'friend', 'group': post.typeUser == 'group'}"></i>
+                    </span>
+                  </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                  <p [attr.dir]='"auto"'>
+                    {{post.descraptions}}
+                  </p>
+                </mat-card-content>
+                <img *ngIf="post.postImage" mat-card-image [src]="post.postImage" alt="Photo of a Shiba Inu" >
+                <div *ngIf="post.postVideo" class="wrap_video">
+                  <video controls [src]="post.postVideo"></video>
+                </div>
+                <mat-card-actions>
+                  <div class="status">
+                    <div class="info_post">
+                      <ng-container *ngFor="let react of post.likes.typeReacts">
+                        <span *ngIf="react" class="react">
+                          <img height="18px" [src]="'../assets/img/' + react.type" alt="">
+                        </span>                                          
+                      </ng-container>
+                      <span class="name_user_reacts">
+                        {{post.likes.listUserReacts[0].name + ', ' + post.likes.listUserReacts[1].name + ' And ' + (post.likes.listUserReacts.length - 2) + ' others '}}
+                      </span>
+                      <span class="total">{{post.likes.listUserReacts.length}}</span>
+                      <span class="num_comments">{{getAllCountComment(post.comments)}} Comments</span>
+                    </div>
+                  </div>
+                  <ul class="options list_none">
+                    <li>
+                      <span>
+                        <i class="icons size_18 un_like"></i>
+                      </span>
+                      <span>Like</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="icons size_18 comment"></i>
+                      </span>
+                      <span>Comment</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="icons size_18 share"></i>
+                      </span>
+                      <span>Share</span>
+                    </li>                                        
+                  </ul>
+                </mat-card-actions>
+                <div class="wrap_comment">
+                  <!-- start  component full-box-editor -->
+                  <app-full-box-editor [state]="true" [data]="{userImage: post.userImage}"></app-full-box-editor>
+                  <!-- end  component full-box-editor -->
+                </div>
+                <div class="list_comment">
+                  <ul class="list_none">
+                    <li  *ngFor="let comment of post.comments">
+                      <!-- start  component full-commen -->
+                      <app-full-comment [state]="true" [data]="comment"></app-full-comment>
+                      <!-- end  component full-commen -->
+                      <div class="list_comment_reply">
+                        <ul class="list_none">
+                          <li *ngFor="let reply of comment.list_reply">
+                            <!-- start  component full-commen -->
+                            <app-full-comment [reply]="true"  [data]="reply"></app-full-comment>
+                            <!-- end  component full-commen -->
+                          </li>
+                          <li>
+                            <!-- start  component full-box-editor -->
+                            <app-full-box-editor [state]="true" [reply]="true" [data]="{userImage: post.userImage}"></app-full-box-editor>
+                            <!-- end  component full-box-editor -->                            
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </mat-card>            
+        </ng-container>
+    </div>
+</main>

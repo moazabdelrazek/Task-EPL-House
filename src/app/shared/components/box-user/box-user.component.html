@@ -1,0 +1,6 @@
+<div class="wrap_user" [ngClass]="{'reply': type == 'reply'}">
+    <div class="wrap_img_user active">
+      <img class="def_img" [src]="data?.userImage" alt="">
+    </div>
+    <span *ngIf="isOnline" class="state"></span>
+</div>

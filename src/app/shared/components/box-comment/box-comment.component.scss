@@ -1,0 +1,54 @@
+.wrap_commeent {
+    float: left;
+    width: calc(100% - 39px);
+    &.reply {
+        .info span {
+            &.user_name {
+                font-size: 13px;
+            }
+            &.user_name_reply_to {
+                font-size: 15px;
+                line-height: .9;
+                font-weight: 500;
+                margin-bottom: 2px;
+            }
+        }
+    }
+    .info {
+        padding: 8px 12px;
+        border-radius: 15px;
+        display: inline-block;
+        background-color: #3a3b3c;
+        span {
+            display: block;
+            &.user_name {
+                color: #E4E6EB;
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+            &.text {
+                font-size: 14px;
+                text-align: initial;
+            }
+        }
+    }
+    .option_comment {
+        padding: 0px 12px;
+        span {
+            font-size: 12px;
+            color: #b0b3b8;
+            &:not(:last-of-type) {
+                text-transform: capitalize;
+                &::after {
+                    content: '.';
+                    margin: 0 4px;
+                    vertical-align: text-bottom;
+                }
+            }
+            &.opt {
+                cursor: pointer;
+                font-weight: 500;
+            }
+        }
+    }
+}
